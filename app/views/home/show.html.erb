@@ -1,0 +1,10 @@
+<div align="center">
+  <h2>La crypto <%= @name %> vaut <%= @value %> $.</h2>
+
+  <h3>Souhaites tu connaitre le prix d'une autre crypto ?</h3>
+
+  <%= form_tag do %>
+    <%= select_tag "Crypto", options_for_select(@cryptos.sort), class: "form-control"%>
+    <%= submit_tag "Valider" , class: "btn btn-primary"%>
+  <% end %>
+</div>

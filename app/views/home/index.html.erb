@@ -1,0 +1,9 @@
+<div align="center">
+  <h1>Bienvenue sur CryptoVisualizer</h1>
+  <h2>Choisis une crypto à évaluer</h2>
+
+  <%= form_tag do %>
+    <%= select_tag "Crypto", options_for_select(@cryptos.sort), class: "form-control"%>
+    <%= submit_tag "Valider" , class: "btn btn-primary"%>
+  <% end %>
+</div>
